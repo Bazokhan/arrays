@@ -7,9 +7,9 @@
     margin-bottom: 20px;
 }
 
-#current-button {
+/* #current-button {
     height: 100px;
-}
+} */
 
 #title {
     margin-left: 30px;
@@ -73,4 +73,31 @@ input[placeholder] {
 .underlined {
     text-transform: uppercase;
     border-bottom: solid 1px #2196F3;
+}
+
+#brief, #syntax {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.small-arrow {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px #2196F3;
+    padding: 10px;
+    cursor: pointer;
+}
+.small-arrow::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    display: block;
+    border-top: solid 10px #2095F3;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
 }

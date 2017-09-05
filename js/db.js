@@ -44,3 +44,41 @@ let buttons = [
     'splice', 'push', 'unshift', 'pop', 'shift', 'sort', 'reverse', 'slice',
     'join', 'toString', 'map', 'reduce', 'reduceRight', 'filter', 'find', 'every'
 ]
+
+let briefDb = {
+    'splice'     : 'Adds and/or removes elements from an array.',    
+    'push'       : 'Adds one or more elements to the end of an array and returns the new length of the array.',
+    'unshift'    : 'Adds one or more elements to the front of an array and returns the new length of the array.',
+    'pop'        : 'Removes the last element from an array and returns that element.',
+    'shift'      : 'Removes the first element from an array and returns that element.',
+    'sort'       : 'Sorts the elements of an array in place and returns the array.',
+    'reverse'    : 'Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.',
+    'slice'      : 'Extracts a section of an array and returns a new array.',    
+    'join'       : 'Joins all elements of an array into a string.',
+    'toString'   : 'Returns a string representing the array and its elements. ',
+    'map'        : 'Creates a new array with the results of calling a provided function on every element in this array.',
+    'reduce'     : 'Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.',
+    'reduceRight': 'Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.',
+    'filter'     : 'Creates a new array with all of the elements of this array for which the provided filtering function returns true.',
+    'find'       : 'Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.',        
+    'every'      : 'Returns true if every element in this array satisfies the provided testing function.'
+}
+
+let syntaxDb = {
+    'splice'     : 'Adds and/or removes elements from an array.',    
+    'push'       : 'Adds one or more elements to the end of an array and returns the new length of the array.',
+    'unshift'    : 'Adds one or more elements to the front of an array and returns the new length of the array.',
+    'pop'        : 'Removes the last element from an array and returns that element.',
+    'shift'      : 'Removes the first element from an array and returns that element.',
+    'sort'       : 'Sorts the elements of an array in place and returns the array.',
+    'reverse'    : 'Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.',
+    'slice'      : 'array.slice(begin ?, end ?)',    
+    'join'       : 'array.join(separator ?)',
+    'toString'   : 'array.toString()',
+    'map'        : 'Creates a new array with the results of calling a provided function on every element in this array.',
+    'reduce'     : 'Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.',
+    'reduceRight': 'Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.',
+    'filter'     : 'array.filter(function(element) {//condition}) ===> returns a new array with the elements that pass the condition.',
+    'find'       : 'array.find(function(element) {//condition}) ===>  returns the first element that satisfies the condition',        
+    'every'      : 'array.every(function(element) {//condition}) ===> returns true if every array element satisfies the condition; otherwise returns false.)'
+}

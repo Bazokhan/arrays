@@ -9,7 +9,10 @@ const mutateDiv         = document.getElementById('mutate');
 const newArrDiv         = document.getElementById('new-arr');
 const userInputDiv      = document.getElementById('user-input');
 const editButtons       = document.getElementsByClassName('user');
-const errorDiv          = document.getElementById('error')
+const errorDiv          = document.getElementById('error');
+const briefDiv          = document.getElementById('brief');
+const syntaxDiv         = document.getElementById('syntax');
+const showInfoDiv       = document.getElementById('show-info');
 
 // Side List Event Listener
 function currentButtonClick(e) {
@@ -20,6 +23,20 @@ function currentButtonClick(e) {
     btn.id = 'main-button';
     btn.setAttribute('onclick',`db.${e.target.getAttribute('data-onclick')}()`);
     currentButtonDiv.appendChild(btn);
+    briefDiv.innerHTML = '';
+    syntaxDiv.innerHTML = '';
+    showInfoDiv.innerHTML = '<span class="small-arrow">More</span>';
+    showInfoDiv.onclick = function() {
+        if(briefDiv.innerHTML && syntaxDiv.innerHTML) {
+            briefDiv.innerHTML = '';
+            syntaxDiv.innerHTML = '';
+            showInfoDiv.innerHTML = '<span class="small-arrow">More</span>';
+        } else {
+            briefDiv.innerHTML = briefDb[e.target.getAttribute('data-onclick')];
+            syntaxDiv.innerHTML = syntaxDb[e.target.getAttribute('data-onclick')];
+            showInfoDiv.innerHTML = '<span class="small-arrow">Less</span>';
+        }        
+    }
     db.a = originalArray.map(el=>el); // Resetting the database
 }
 // Red Button Event Listener (Show / Hide List)
