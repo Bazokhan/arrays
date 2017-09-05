@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="mui.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mui-container">
+            <div class="mui-appbar mui--appbar-line-height">     
+                <span id="title" class="mui--text-title ">Array.prototype.method()</span>
+            </div>
+            <div class="mui-row">
+                <!-- side-list -->
+                <div class="mui-col-md-3">
+                    <p class="plain-text">Welcome! Let's begin exploring different Array.prototype methods and learn how they work..</p>
+                    <ul id="buttons" class="mui-panel"><li id="toggle" class="mui-btn mui-btn--danger">Methods</li></ul>
+                </div>
+                <!-- main-body -->
+                <div class="mui-col-md-9">
+                    <!-- original-array and user-input buttons -->
+                    <div class="mui-panel mui--text-center">
+                        <h2 class="mui--text-title">Original Array</h2>
+                        <div class="mui-divider"></div>
+                        <div id="original-array" class="mui--text-title">
+                            <div id="user-input"></div>
+                            <div>
+                                <span class="mui-btn mui-btn--flat user" style="display: block">Edit</span>
+                                <span class="mui-btn mui-btn--flat user" style="display: none">Save</span>
+                                <span class="mui-btn mui-btn--flat user" style="display: none">Cancel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- current-button and result-display area -->
+                    <div id="current-button"><p class="mui--text-center">Choose a method from the list<p></div>
+                    <div class="mui-panel mui--text-center">
+                        <h2 id="result" class="mui--text-title">Result</h2>
+                        <div class="mui-divider"></div>
+                        <p id="return" class="mui--text-title"></p>
+                        <p id="mutate" class="mui--text-title"></p>
+                        <p id="new-arr" class="mui--text-title"></p>
+                    </div>
+                <!-- end main-body -->
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script src="dom.js"></script>
+        <script src="user.js"></script>
+        
+    </body>
+</html>

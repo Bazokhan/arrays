@@ -1,0 +1,66 @@
+.mui-btn {
+    display: block;
+    margin: 5px auto;
+}
+
+.mui-divider {
+    margin-bottom: 20px;
+}
+
+#current-button {
+    height: 100px;
+}
+
+#title {
+    margin-left: 30px;
+}
+
+.sidedrawer-toggle {
+    color: #fff;
+}
+
+.arrItem {
+    display: inline-block;
+    position: relative;
+    background: #eee;
+    margin: 10px;
+    padding: 20px;
+}
+
+.arrItem::after {
+    position: absolute;
+    right: -10px;
+    top: 45%;
+    content: "";
+    border-left: solid 5px #555;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+}
+
+.arrItem:last-child::after {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.red { background-color: #FFCDCD; padding: 10px; }
+.green { background-color: #CDFFD8; padding: 10px; }
+
+input {
+    height: 50px;
+    background: none;
+    border: solid 1px #ededed;
+    box-shadow: 2px 2px #ddd;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+input[placeholder] {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.plain-text {
+    padding: 20px;
+    line-height: 2em;
+}
