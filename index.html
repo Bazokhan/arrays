@@ -10,21 +10,22 @@
     <body>
         <div class="mui-container">
             <div class="mui-appbar mui--appbar-line-height">     
-                <span id="title" class="mui--text-title ">Array.prototype.method()</span>
+                <a href="index.html"><span id="title" class="mui--text-title ">Array.prototype.method()</span></a>
             </div>
             <div class="mui-row">
                 <!-- side-list -->
                 <div class="mui-col-md-3">
                     <p class="plain-text">Welcome! Let's begin exploring different Array.prototype methods and learn how they work..</p>
+                    <p class="plain-text mui--visible-sm-block mui--visible-xs-block">We start with an example array called <strong>my_Array</strong>. You can now choose a method by clicking on the <strong>Methods</strong> button and clicking on a certain method name to invoke it on my_Array. I've provided default arguments to these methods, you can check them by clicking on the <strong>More</strong> button down below to see the actual syntax executed. You can also change the my_Array to whatever you like by clicking the <strong>Edit</strong> button below it. Now let's refresh our memories about array methods !</p>
                     <ul id="buttons" class="mui-panel"><li id="toggle" class="mui-btn mui-btn--danger">Methods</li></ul>
+                    <p class="plain-text mui--visible-md-block mui--visible-lg-block mui--visible-xl-block">We start with an example array called <strong>my_Array</strong>. You can now choose a method by clicking on the <strong>Methods</strong> button and clicking on a certain method name to invoke it on my_Array. I've provided default arguments to these methods, you can check them by clicking on the <strong>More</strong> button down below to see the actual syntax executed. You can also change the my_Array to whatever you like by clicking the <strong>Edit</strong> button below it. Now let's refresh our memories about array methods !</p>
                 </div>
                 <!-- main-body -->
                 <div class="mui-col-md-9">
-                    <p class="plain-text">We start with an example array called <strong>Original Array</strong>. You can then choose a method by clicking on the <strong>Methods</strong> button and choosing a certain array method to apply to this example array. I've provided default arguments to these methods, but you can always change them to test out things. You can also change the original array itself by clicking the <strong>Edit</strong> button below it. Now let's refresh our memories about array methods !</p> 
                     <!-- original-array and user-input buttons -->
                     <div class="mui-panel mui--text-center">
                         <div id="error"></div>
-                        <h2 class="mui--text-title">Original Array</h2>
+                        <h2 class="mui--text-title">my_Array</h2>
                         <div class="mui-divider"></div>
                         <div id="original-array" class="mui--text-title">
                             <div id="user-input"></div>
@@ -41,8 +42,8 @@
                     <div class="mui-panel mui--text-center">
                         <h2 id="result" class="mui--text-title">Result</h2>
                         <div class="mui-divider"></div>
-                        <p id="return" class="mui--text-title"></p>
-                        <p id="mutate" class="mui--text-title"></p>
+                        <p id="return" class="mui--text-title">Invoke the method by clicking on its name to see what it does to my_Array!</p>
+                        <p id="mutate" class="mui--text-title">I wonder what each method really returns!</p>
                         <p id="new-arr" class="mui--text-title"></p>
                     </div>
                     <!-- more-info -->

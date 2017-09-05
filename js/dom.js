@@ -23,6 +23,7 @@ function currentButtonClick(e) {
     btn.id = 'main-button';
     btn.setAttribute('onclick',`db.${e.target.getAttribute('data-onclick')}()`);
     currentButtonDiv.appendChild(btn);
+    redButtonClick();
     briefDiv.innerHTML = '';
     syntaxDiv.innerHTML = '';
     showInfoDiv.innerHTML = '<span class="small-arrow">More</span>';
@@ -65,7 +66,7 @@ function resArray(a) {
 function logger(funcReturn, a, bool) {
     returnDiv.innerHTML = `This method returns <strong class="underlined">${Array.isArray(funcReturn) ? 'array' : typeof funcReturn}</strong>. In this case it\'s:`;
     returnedValue(funcReturn);
-    mutateDiv.innerHTML = `It <span class="${bool ? "red\">mutates" : "green\">doesn't mutate" }</span> the original array. Original array is now:`;
+    mutateDiv.innerHTML = `It <span class="${bool ? "red\">mutates" : "green\">doesn't mutate" }</span> the original array. my_Array is now:`;
     resArray(a); 
 }
 

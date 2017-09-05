@@ -91,6 +91,7 @@ input[placeholder] {
     border: solid 1px #2196F3;
     padding: 10px;
     cursor: pointer;
+    border-radius: 50%;
 }
 .small-arrow::after {
     content: "";
@@ -100,4 +101,8 @@ input[placeholder] {
     border-top: solid 10px #2095F3;
     border-right: solid 10px transparent;
     border-left: solid 10px transparent;
+}
+.mui-appbar a {
+    color: #fff;
+    text-decoration: none;
 }
