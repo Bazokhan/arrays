@@ -64,3 +64,8 @@ input[placeholder] {
     padding: 20px;
     line-height: 2em;
 }
+
+.footer {
+    padding: 10px;
+    background: #ddd;
+}
