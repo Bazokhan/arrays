@@ -9,6 +9,7 @@ const mutateDiv         = document.getElementById('mutate');
 const newArrDiv         = document.getElementById('new-arr');
 const userInputDiv      = document.getElementById('user-input');
 const editButtons       = document.getElementsByClassName('user');
+const errorDiv          = document.getElementById('error')
 
 // Side List Event Listener
 function currentButtonClick(e) {
