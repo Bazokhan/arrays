@@ -46,7 +46,7 @@ function resArray(a) {
     a.forEach(el=>newArrDiv.innerHTML+=`<span class="arrItem">${el}</span>`);
 }
 function logger(funcReturn, a, bool) {
-    returnDiv.innerHTML = `This method returns ${typeof funcReturn} which is:`;
+    returnDiv.innerHTML = `This method returns <strong class="underlined">${Array.isArray(funcReturn) ? 'array' : typeof funcReturn}</strong>. In this case it\'s:`;
     returnedValue(funcReturn);
     mutateDiv.innerHTML = `It <span class="${bool ? "red\">mutates" : "green\">doesn't mutate" }</span> the original array. Original array is now:`;
     resArray(a); 
